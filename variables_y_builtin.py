@@ -20,3 +20,13 @@ nombre_input = input("Ingrese su nombre :")
 edad_input = input("Ingrese su edad: ")
 print(nombre_input)
 print(edad_input)
+
+
+#Print en una sola linea con format (f) es como en c.
+print(f'El tipo de dato de edad_input es : {type(edad_input)} , y si lo inteo seria {type(int(edad_input))} y como lo estoy haciendo en la misma linea el dato finalmente queda como {type(edad_input)}' ) # O sea no cambia si no lo guardo.
+print(f"El nombre ingresado es : {nombre_input} y la edad ingresada : {edad_input} años.")
+
+""""
+Bueno aca termino con esta parte, las demas funciones builtin las voy a ir viendo cuando las necesite, con eso ya vi suficiente de variables, es muy sencillo al ser tan dinamico
+
+"""
