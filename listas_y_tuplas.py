@@ -27,3 +27,14 @@ lista_reslpado = mi_lista.copy()
 mi_lista.clear() #Limpia la lista
 print(mi_lista)
 print(lista_reslpado) #Deberia haberse guardado...SI
+primera_tupla = ("Valentin","Gomez",24) #Tripla
+#primera_tupla[2] = 25 NO! Es inmutable.
+segunda_tupla = ("Argentina","River Plate")
+tercer_tupla = primera_tupla+segunda_tupla
+print(tercer_tupla) 
+tercer_tupla = list(tercer_tupla) #La reasigno como lista.
+print(type(tercer_tupla))
+tercer_tupla.insert(5,"Pilar")
+print(tercer_tupla)
+tercer_tupla = tuple(tercer_tupla)#Reasigno nuevamente.
+
