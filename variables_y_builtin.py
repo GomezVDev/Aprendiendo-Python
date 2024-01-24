@@ -3,7 +3,7 @@
 # Se puede variables en una sola linea
 nombre,edad,apodo = "Valentin", 'veinticuatro',"Chiche"
 
-#Asi como 
+#Asi como , 24/01 : Esto es un DICT!
 informacion_primo ={
     'nombre.primo' : 'Hernan' , #Notese que de esta manera hay que usar : y ademas una ,
     'edad.primo' : 'Veinticinco' ,

@@ -11,9 +11,9 @@ print(tercer_lista[0])
 mi_lista.append("Argentina") #Agrega al final de la lista
 mi_lista.insert(5,"River Plate") #Agrega en el indice que le indico
 #print(mi_lista)
-mi_lista.insert(5,"Pilar") #Lo cambia? NO!inserta y mueve lo que estaba en su lugar para la derecha
+mi_lista.insert(5,"Buenos Aires") #Lo cambia? NO!inserta y mueve lo que estaba en su lugar para la derecha
 print(mi_lista)
-mi_lista.remove("Pilar") #Elimina la primer coincidencia y tiene que ser igual
+mi_lista.remove("Buenos Aires") #Elimina la primer coincidencia y tiene que ser igual
 print(mi_lista)
 mi_lista.reverse() #Reversa literalmente
 print(mi_lista)
@@ -34,7 +34,26 @@ tercer_tupla = primera_tupla+segunda_tupla
 print(tercer_tupla) 
 tercer_tupla = list(tercer_tupla) #La reasigno como lista.
 print(type(tercer_tupla))
-tercer_tupla.insert(5,"Pilar")
+tercer_tupla.insert(5,"Buenos Aires")
 print(tercer_tupla)
 tercer_tupla = tuple(tercer_tupla)#Reasigno nuevamente.
-
+primer_dict = {
+    "Nombre":"Valentin",
+    "Apellido":"Gomez",
+    "Edad":25,
+    "Lenguajes":{"Python","C"}
+    }
+#print(primer_dict)
+print(primer_dict.get("Lenguajes","Nombre"))#No crashea pero el nombre no lo imprime
+print(primer_dict.get("Nombre")) 
+print(primer_dict["Nombre"])
+primer_dict["Nombre"] = "Blas"
+print(primer_dict["Nombre"])
+#nombre,apellido = primer_dict.get("Nombre","Apellido") too many values to unpack (expected 2)
+nombre = primer_dict.get("Nombre")
+apellido = primer_dict.get("Apellido")
+print(f"El nombre geteado es {nombre} y el {apellido}")
+primer_dict["Club"] = "River Plate" #Agrega al final
+print(primer_dict)
+segundo_dict = dict.fromkeys(primer_dict)
+print(segundo_dict) #Me sirve para crear otro "vacio" en base al que ya tengo (Hay más pero esta es una buena utilidad)
