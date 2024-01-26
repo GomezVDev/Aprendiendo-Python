@@ -22,7 +22,7 @@ def prueba(var_1,var_2):
     #Si pone que no en ambos condicionales, el programa finaliza con un saludo
     #finally:
     #   print("Gracias por usar nuestra App")
-    #c
+    #probando cambios 
 
 ################
 var_1 = input("Ingrese primer numero: ")
