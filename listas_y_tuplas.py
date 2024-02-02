@@ -57,3 +57,11 @@ primer_dict["Club"] = "River Plate" #Agrega al final
 print(primer_dict)
 segundo_dict = dict.fromkeys(primer_dict)
 print(segundo_dict) #Me sirve para crear otro "vacio" en base al que ya tengo (Hay más pero esta es una buena utilidad)
+lista_rango = [i for i in range(0,11)]
+print(lista_rango)
+lista_rango2 = [i+2 for i in range(0,11)]
+print(lista_rango2)
+lista_rango2 = [i*2 for i in range(0,11)]
+print(lista_rango2)
+lista_rango2 = [i*i for i in range(0,11)]
+print(lista_rango2)
