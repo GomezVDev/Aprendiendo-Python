@@ -50,4 +50,21 @@ with open("./json_file.json", "r") as json_file:
 
 json_dict = json.load(open("./json_file.json")) #Lo parseo de JSON --> DICT, mucha utilidad.
 print(json_dict)
-print(json_dict["Apellido"][0])
+print(json_dict["Apellido"][0]) #Gomez
+
+#Csv
+
+import csv # Esto puede ser un excel
+
+nuevo_csv = open("./csv_file.csv","w+")
+csv_writer = csv.writer(nuevo_csv)
+csv_writer.writerow(["Nombre","Apellido","Edad"])
+csv_writer.writerow(["Valentin","Gomez",24])
+
+nuevo_csv.close()
+
+with open("./csv_file.csv","r+") as csv_file:
+    for line in csv_file.readlines():
+        print(line)
+
+
