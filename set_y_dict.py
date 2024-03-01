@@ -18,4 +18,4 @@ primer_set.add("Valentin")
 segundo_set = {"Buenos Aires","Mate"}
 tercer_set = primer_set.union(segundo_set) 
 print(tercer_set.union({2025}))
-print(tercer_set)#A diferencia de las listas, si la modifico en un print, no afecta al objeto en si, solamente en la ejecucion.
+print(tercer_set)
